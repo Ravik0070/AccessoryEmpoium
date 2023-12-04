@@ -29,12 +29,12 @@ Make Sure to Create a .env file in ** backend**  directory and add appropriate v
 - KEY_ID = RAZORPAY_KEY_ID
 - KEY_SECRET = RAZORPAY_SECRET_KEY
 
-  ## HOW TO TWEAK THIS PROJECT
+## HOW TO TWEAK THIS PROJECT
   Since its a personal project for learning purpose, I'd encourage you to clone and use it for your own purpose.
 
 ## FOUND A BUG?
 If you found and issue or would like to submit some improvement to this project, please submit an issue using the issue tab above.
 
-# KNOWN ISSUES
+## KNOWN ISSUES
 As this is a learnig project, one or two features might not work for now, like  **News letter**, or **Social Links**, also there are  some features that might be added in future, like **Passord recovery**, **Email verification**, **Track order**.
 

@@ -1,6 +1,6 @@
 # MERN E-commerece Project with RazorPay integration
 ## A fully functional project created with MERN stack showing how to create an E-commerce website along with payment integration!
-This project is shows how to create a MERN stack project, where React is used for the client side i.e. UI , for the backent Node & Express API is used along with the JWT authentication for login/register. Mongo is used as database (Atlas mongo{web version}).
+This project is shows how to create a MERN stack project, where React is used for the client side i.e. UI , for the backend Node & Express API is used along with the JWT authentication for login/register. Mongo is used as database (Atlas mongo{web version}).
 ### Following are the points covered in this project
 + Create an UI for front-end using styled-components, JSX, With REACT.
 + How to use hooks.

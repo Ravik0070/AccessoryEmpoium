@@ -15,10 +15,10 @@ This project is shows how to create a MERN stack project, where React is used fo
 - Open in VScode
 - For Backend open terminal :
  * cd api 
- * npm i
+ * npm install
 - For Frontend open terminal
  * cd client
- * npm i
+ * npm install
 ## NOTE
 Make Sure to Create a .env file in ** backend**  directory and add appropriate variables in order to use the app.
 **ESSENTIAL VARIALBLES**

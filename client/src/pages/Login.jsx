@@ -13,7 +13,6 @@ const Container = styled.div`
   justify-content: center;
   flex-direction: column;
 `;
-
 const Wrapper = styled.div`
   width: 20%;
   padding: 20px;

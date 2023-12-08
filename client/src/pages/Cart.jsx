@@ -49,7 +49,7 @@ const ProductDetail = styled.div`
 `;
 const Image = styled.img`
   width: 200px;
-  ${mobile({ width: "160px" })}
+  ${mobile({ width: "160px",objectFit:"contain" })}
 `;
 const Details = styled.div`
   padding: 20px;

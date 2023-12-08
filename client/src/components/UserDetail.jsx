@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { updateUserData } from "../redux/userRedux";
 import moment from "moment/moment";
 import { Cancel, CheckBox } from "@mui/icons-material";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   display: flex;
@@ -19,6 +20,7 @@ const Wrapper = styled.div`
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  ${mobile({ flexDirection: "column" })}
 `;
 const PersonalDetails = styled.div`
   padding: 10px 20px;
@@ -28,6 +30,7 @@ const PersonalDetails = styled.div`
   height: 200px;
   border-radius: 7px;
   position: relative;
+  ${mobile({ width: "90%", height: "auto", margin: "0 auto" })}
 `;
 const Row = styled.div`
   display: flex;
@@ -54,6 +57,7 @@ const Address = styled.div`
   height: 200px;
   border-radius: 7px;
   overflow-y: scroll;
+  ${mobile({ width: "90%", height: "auto", margin: "0 auto" })}
 `;
 const P = styled.p`
   font-size: 15px;
@@ -100,6 +104,7 @@ const Th = styled.th`
   padding: 9px 0;
   font-size: 19px;
   color: white;
+  ${mobile({ padding: "2px 0", fontSize: "8px" })}
 `;
 const Tbody = styled.tbody`
   width: 100%;
@@ -111,6 +116,7 @@ const Tr = styled.tr`
   padding: 12px 0;
   border-bottom: 1px solid teal;
   background-color: #f4f1f1;
+  ${mobile({ padding: "4px 0" })}
 `;
 const Td = styled.td`
   flex-wrap: wrap;
@@ -118,6 +124,7 @@ const Td = styled.td`
   justify-content: center;
   align-items: center;
   font-weight: 700;
+  ${mobile({ fontWeight: 500, fontSize: "8px" })}
 `;
 const Ul = styled.ul`
   list-style: none;
@@ -131,6 +138,7 @@ const Input = styled.input`
   border: none;
   outline: none;
   font-size: 20px;
+  ${mobile({ fontSize: "8px" })}
 `;
 const UserDetail = () => {
   const user = useSelector((state) => state.user.currentUser);
@@ -259,10 +267,12 @@ const UserDetail = () => {
                     <Cancel style={{ color: "red" }} />
                   )}
                 </Td>
-                <Td style={{ width: "20%", fontWeight: "500" }}>
+                <Td
+                  style={{ width: "20%", fontWeight: "500" }}
+                >
                   {order.orderId}
                 </Td>
-                <Td style={{ width: "45%" }}>
+                <Td style={{ width: "45%"}}>
                   <Ul>
                     {order.products.map((item) => (
                       <Li key={item.productId}>

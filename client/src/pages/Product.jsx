@@ -109,7 +109,7 @@ const Product = () => {
         <InfoContainer>
           <Title>{product.title}</Title>
           <Desc>{product.description}</Desc>
-          <Price>{product.price}</Price>
+          <Price>&#8377; {product.price}</Price>
           <AddContainer>
             <AmountContainer>
               <Remove

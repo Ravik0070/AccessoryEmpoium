@@ -18,20 +18,20 @@ router.post("/payment", async (req, res) => {
       receipt: `receipt_`,
     };
     const order = await instance.orders.create(options);
-    res.status(200).json(order);
     const newOrder = await Order({
       userId: req.body.userId,
       orderId: order.id,
       products: cartItems.map((item) => ({
         product: item._id,
         quantity: item.quantity,
-        name: item.title
+        name: item.title,
       })),
       amount: order.amount,
       address: req.body.userAddress,
       status: order.status,
     });
     newOrder.save();
+    res.status(200).json(order);
   } catch (err) {
     res.status(500).json(err);
   }
